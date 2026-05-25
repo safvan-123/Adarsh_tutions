@@ -149,7 +149,7 @@ export default function Hero() {
                 <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </a>
-            <a href="#about" className="btn-outline hero__btn-outline">
+            <a href="#contact" className="btn-outline hero__btn-outline">
               Know More
             </a>
           </div>
