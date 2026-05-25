@@ -6,6 +6,7 @@ import Image3 from "./images/image_3_.jpeg"
 import Image4 from "./images/image_4_.jpeg"
 import Image5 from "./images/image_5_.jpeg"
 import Image6 from "./images/image_6_.jpeg"
+import { Link } from 'react-router-dom';
 
 const STATS = [
   { value: '25+', label: 'Years of Excellence' },
@@ -142,17 +143,44 @@ export default function Hero() {
             institute — shaping futures with expert guidance and care.
           </p>
 
-          <div className="hero__actions">
-            <a href="#contact" className="btn-primary hero__btn-primary">
-              Enroll Today
-              <svg viewBox="0 0 20 20" fill="none" className="hero__btn-icon">
-                <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </a>
-            <a href="#contact" className="btn-outline hero__btn-outline">
-              Know More
-            </a>
-          </div>
+    ```jsx id="6jxv0u"
+<div className="hero__actions">
+
+  <a href="#contact" className="btn-primary hero__btn-primary">
+    Enroll Today
+
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      className="hero__btn-icon"
+    >
+      <path
+        d="M4 10h12M12 6l4 4-4 4"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </a>
+
+  <a
+    href="#contact"
+    className="btn-outline hero__btn-outline"
+    onClick={(e) => {
+      e.preventDefault();
+
+      document
+        .getElementById("contact")
+        .scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    Know More
+  </a>
+
+</div>
+```
+
 
           {/* STATS */}
           <div className="hero__stats">
