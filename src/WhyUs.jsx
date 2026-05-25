@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import './WhyUs.css';
+import Image1 from "./images/image_1__.jpeg"
 
 const reasons = [
   {
@@ -53,10 +54,10 @@ const reasons = [
         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
       </svg>
     ),
-    title: 'Most Trusted in West Kochi',
-    desc: 'Families in West Kochi have trusted us for over two decades. We did not build this reputation through advertisements — we earned it through the success of our students, year after year.',
+    title: 'Most Trusted in Kochi',
+    desc: 'Families in Kochi have trusted us for over two decades. We did not build this reputation through advertisements — we earned it through the success of our students, year after year.',
     stat: '#1',
-    statLabel: 'In West Kochi',
+    statLabel: 'In Kochi',
   },
   {
     icon: (
@@ -207,7 +208,7 @@ export default function WhyUs() {
             </h1>
             <p className="whyus__sub">
               We do not just promise good results — we have been delivering them every single year since 1999.
-              Students from West Kochi and beyond choose us because our teaching truly works.
+              Students from Kochi and beyond choose us because our teaching truly works.
             </p>
             <div className="whyus__header-stats">
               <div className="whyus__stat-pill">
@@ -228,7 +229,7 @@ export default function WhyUs() {
           </div>
           <div className="whyus__header-img reveal" style={{ transitionDelay: '0.12s' }}>
             <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80"
+              src={Image1}
               alt="Students achieving success"
             />
             <div className="whyus__header-card">
@@ -274,7 +275,7 @@ export default function WhyUs() {
             <div className="whyus__test-header-left">
               <span className="section-tag">Student Stories</span>
               <h2>Words From Our <span>Students</span></h2>
-              <p>Real reviews from real students who studied right here in West Kochi.</p>
+              <p>Real reviews from real students who studied right here in Kochi.</p>
             </div>
             <div className="whyus__test-header-right">
               <div className="whyus__test-meta">

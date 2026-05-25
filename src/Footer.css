@@ -134,7 +134,7 @@
 
 .footer__links > a:hover {
   color: var(--blue-bright);
-  padding-left: 4px;
+  /* padding-left: 4px; */
 }
 
 /* ── COURSE GROUPS ── */
@@ -170,7 +170,7 @@
 
 .footer__course-group a:hover {
   color: var(--blue-bright);
-  padding-left: 4px;
+  /* padding-left: 4px; */
 }
 
 /* ── CONTACT ── */

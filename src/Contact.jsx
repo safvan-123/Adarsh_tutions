@@ -3,6 +3,9 @@
 
 import { useEffect, useRef, useState } from 'react';
 import './Contact.css';
+import Image4 from "./images/image_4_.jpeg"
+import Image5 from "./images/image_5_.jpeg"
+import Image6 from "./images/image_6_.jpeg"
 
 const contactDetails = [
   {
@@ -133,26 +136,39 @@ export default function Contact() {
     setErrors(prev => ({ ...prev, [e.target.name]: '' }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const errs = validate();
-    if (Object.keys(errs).length) { setErrors(errs); return; }
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-    if (form.name && form.phone && form.course) {
-      const messageText =
-        `Hi Aadarsh Academics, I am inquiring about admissions! 🎓\n\n` +
-        `• *My Name:* ${form.name}\n` +
-        `• *Contact Number:* ${form.phone}\n` +
-        `• *Email:* ${form.email || 'Not provided'}\n` +
-        `• *Program Interested In:* ${form.course}\n\n` +
-        `*Additional Details:* ${form.message || 'I would like to get more details regarding the batches and fee structure.'}`;
+  const errs = validate();
 
-      const encodedMessage = encodeURIComponent(messageText);
-      const targetWhatsAppNumber = "919447109598";
-      setSubmitted(true);
-      window.open(`https://wa.me/${targetWhatsAppNumber}?text=${encodedMessage}`, '_blank');
-    }
-  };
+  if (Object.keys(errs).length) {
+    setErrors(errs);
+    return;
+  }
+
+  if (form.name && form.phone && form.course) {
+    const messageText =
+      `Hi Aadarsh Learning & Career Solutions 👋\n\n` +
+      `I would like to know more details about the courses and admission process at Aadarsh Tuitions. 🎓\n\n` +
+      `• *Name:* ${form.name}\n` +
+      `• *Contact Number:* ${form.phone}\n` +
+      `• *Email:* ${form.email || 'Not provided'}\n` +
+      `• *Course Interested In:* ${form.course}\n\n` +
+      `📝 *Additional Message:*\n` +
+      `${form.message || 'I would like to get more information regarding available batches, class timings, fee structure, and admission details.'}\n\n` +
+      `Looking forward to your response. Thank you!`;
+
+    const encodedMessage = encodeURIComponent(messageText);
+    const targetWhatsAppNumber = "919447109598";
+
+    setSubmitted(true);
+
+    window.open(
+      `https://wa.me/${targetWhatsAppNumber}?text=${encodedMessage}`,
+      "_blank"
+    );
+  }
+};
 
   return (
     <section className="contact" id="contact" ref={sectionRef}>
@@ -174,8 +190,9 @@ export default function Contact() {
           </div>
           <div className="contact__header-img reveal" style={{ transitionDelay: '0.12s' }}>
             <img
-              src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?w=700&q=80"
+              src={Image5}
               alt="Contact Aadarsh Tuitions"
+              style={{backgroundSize:"100% 100%",width:"100%"}}
             />
             <div className="contact__header-badge">
               <span>📞</span>
