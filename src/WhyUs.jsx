@@ -21,9 +21,9 @@ const reasons = [
         <path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" />
       </svg>
     ),
-    title: 'Over 10,000 Successful Students',
-    desc: 'More than 10,000 of our former students are now working as doctors, engineers, scientists, and managers across Kerala and India. You will be joining a strong, lifelong community.',
-    stat: '10K+',
+    title: 'Over 5000 Successful Students',
+    desc: 'More than 5000 of our former students are now working as doctors, engineers, scientists, and managers across Kerala and India. You will be joining a strong, lifelong community.',
+    stat: '5K+',
     statLabel: 'Alumni',
   },
   {
@@ -217,7 +217,7 @@ export default function WhyUs() {
               </div>
               <div className="whyus__stat-divider" />
               <div className="whyus__stat-pill">
-                <strong>10,000+</strong>
+                <strong>5000+</strong>
                 <span>Happy Alumni</span>
               </div>
               <div className="whyus__stat-divider" />

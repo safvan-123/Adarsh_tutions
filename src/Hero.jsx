@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const STATS = [
   { value: '25+', label: 'Years of Excellence' },
   { value: '100%', label: 'Success Rate' },
-  { value: '10K+', label: 'Students Mentored' },
+  { value: '5K+', label: 'Students Mentored' },
   { value: '#1', label: 'Rank in Kochi' },
 ];
 
@@ -143,7 +143,6 @@ export default function Hero() {
             institute — shaping futures with expert guidance and care.
           </p>
 
-    ```jsx id="6jxv0u"
 <div className="hero__actions">
 
   <a href="#contact" className="btn-primary hero__btn-primary">
@@ -179,7 +178,7 @@ export default function Hero() {
   </a>
 
 </div>
-```
+
 
 
           {/* STATS */}
