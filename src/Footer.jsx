@@ -75,11 +75,11 @@ export default function Footer() {
         </div>
 
         {/* Contact Column */}
-        <div className="footer__contact">
+        {/* <div className="footer__contact">
           <h4>Contact</h4>
           <p>
             <span className="footer__contact-icon">📍</span>
-            West Kochi, Kerala
+            Kochi, Kerala
           </p>
           <a href="tel:+919447109598">
             <span className="footer__contact-icon">📞</span>
@@ -93,7 +93,41 @@ export default function Footer() {
             <span>🎓</span>
             <span>25+ Years of Excellence</span>
           </div>
-        </div>
+        </div> */}
+        {/* Contact Column */}
+<div className="footer__contact">
+  <h4>Contact</h4>
+
+  <p>
+    <span className="footer__contact-icon">📍</span>
+    Kochi, Kerala
+  </p>
+
+  <a href="tel:+919447109598">
+    <span className="footer__contact-icon">📞</span>
+    +91 9447109598
+  </a>
+
+  <a href="mailto:aadarshtuitions@gmail.com">
+    <span className="footer__contact-icon">✉️</span>
+    aadarshtuitions@gmail.com
+  </a>
+
+  <a
+    href="https://wa.me/919447109598"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="footer__whatsapp-text-link"
+  >
+    <span className="footer__contact-icon">💬</span>
+    WhatsApp Support
+  </a>
+
+  <div className="footer__badge">
+    <span>🎓</span>
+    <span>25+ Years of Excellence</span>
+  </div>
+</div>
 
       </div>
 

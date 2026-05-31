@@ -26,7 +26,7 @@ const contactDetails = [
       </svg>
     ),
     label: 'Email',
-    value: 'info@aadarshtuitions.com',
+    value: 'aadarshtuitions@gmail.com',
     href: 'mailto:info@aadarshtuitions.com',
     sub: 'We reply within 24 hours',
   },
